@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time Sheet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+        
+</head>
+
+<body>
+
+    <br>
+
+    <div class="container">
+
+        <div class="jumbotron text-center">
+            <h1>Train Times</h1>
+            <h2>Schedules, Times, And More</h2>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    
+                    <div class="card-header">
+                        <h5>Current Train Schedule</h5>
+                    </div>
+
+                    <table class="table">
+
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+
+                    </table>
+
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Add Train</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="train-label">Train Name</label>
+                                <input type="train" class="form-control" id="train-name" aria-describedby="emailHelp"
+                                    placeholder="Enter Train Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="destination-label">Destination</label>
+                                <input type="destination" class="form-control" id="train-destination"
+                                    placeholder="Enter Destination">
+                            </div>
+                            <div class="form-group">
+                                <label for="first-train-label">First Train Time</label>
+                                <input type="first" class="form-control" id="first-train-time" placeholder="0000-hrs">
+                            </div>
+                            <div class="form-group">
+                                <label for="frequency-label">Frequency</label>
+                                <input type="frequency" class="form-control" id="train-frequency" placeholder="min">
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="timesheetLogic.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>
